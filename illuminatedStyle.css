@@ -4,6 +4,10 @@ body {
   background: -moz-linear-gradient(90deg, DeepSkyBlue, DodgerBlue); /* For Firefox 3.6 to 15 */
   background: linear-gradient(90deg, DeepSkyBlue, DodgerBlue); /* Standard syntax */
   
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=DeepSkyBlue, endColorstr=DodgerBlue, GradientType=1);  /* IE 5.5–7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=DeepSkyBlue, endColorstr=DodgerBlue, GradientType=1)"; /* IE 8–9 */
+  background: -ms-linear-gradient(90deg, DeepSkyBlue, DodgerBlue);  /* IE 10 */
+  
   font-family: "calibri", Garamond, 'Comic Sans';
   color: Gainsboro;  
 }
