@@ -12,4 +12,12 @@
 #esac
 
 #Fake test as validator.w3.org could lock our ip in case of too many tests
-exit 0;
+if grep -Fq "<<<<" ./illuminatedTexts.html
+then
+	echo "Conflicts in illuminatedTexts.html file"
+	exit 1
+else
+	echo "No conflicts"
+	exit 0
+fi
+
