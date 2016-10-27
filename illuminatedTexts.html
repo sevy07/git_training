@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<style>
+.blink {
+  position: absolute;
+  left: 45%;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+</style>
 <head>
   <title>Illuminated Texts</title>
   <link rel="stylesheet" href="illuminatedStyle.css">
@@ -9,6 +27,10 @@
 <body>
   <h1>Extracted from the French &#698;<a href="http://www.enluminures.culture.fr/documentation/enlumine/fr/visites.htm">Bibliotheque Nationale</a>&#698; site</h1>
   <h2>Illuminated texts ordered by theme </h2>
+  
+  <div class="blink" style="position: absolute">
+    <img src="file:./sources/error.jpg" alt="ERROR">
+  </div>
   
   <div style="display=none;">
 	this additional text will never be shown
