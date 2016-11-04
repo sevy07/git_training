@@ -1,0 +1,11 @@
+#! /usr/bin/env perl
+
+while (<STDIN>) {
+	#Populate User
+	s/(?<=key="user" value=")\s(?=")/johnDoe/g;
+	
+	#Populate Password
+	s/(?<=key="password" value=")\s(?=")/johnPwd/g;
+	
+	print $_;
+}
