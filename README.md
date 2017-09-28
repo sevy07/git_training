@@ -9,9 +9,15 @@
 The goal of this exercise is to get familiar with the cherry-picking functionality of git.
 
 
-* Cherry-pick the commit with comment `very urgent fix` from branch `cherry-pick`
+* List all the commits that are present on branch `cherry-pick` but not on this branch
 
+
+* Cherry pick, **in one single command** *ALL* the commits from `cherry-pick` branch that are not on this branch
+
+
+* Inspect that no other commits were cherry-picked, and that you have the commit history needed: just the fixes, after the exercise description, in the correct order. 
 
 ***
+
 
 The images are free from rights illuminated texts from the French ["Bibliotheque Nationale"](http://www.enluminures.culture.fr/documentation/enlumine/fr/visites.htm) 
